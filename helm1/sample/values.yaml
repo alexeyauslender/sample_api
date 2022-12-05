@@ -6,7 +6,7 @@ replicaCount: 2
 
 image:
   repository: dayforcedevops/sample
-  version: 1.0.1
+  version: 1.0.2
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
@@ -75,7 +75,7 @@ resources: {}
 
 autoscaling:
   enabled: false
-  minReplicas: 2
+  minReplicas: 3
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80

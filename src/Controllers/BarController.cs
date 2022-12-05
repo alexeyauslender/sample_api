@@ -17,9 +17,10 @@ namespace routing.Controllers
         }
 
         [Route("{reference:guid}")]
-        public async Task<Bar> GetBar(Guid reference) {
+        public async Task<string> GetBar(Guid reference) {
             var bar = new Bar(reference.ToString());
-            return bar;
+            var date = DateTime.Now;
+            return  $"{bar.ToString()}:{date}";
         }
     }
 }

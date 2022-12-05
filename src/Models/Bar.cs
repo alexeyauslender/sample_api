@@ -8,5 +8,10 @@ namespace routing.Models {
 
         public string Type => "Bar";
         public string Reference {get;set;}
+
+        public override string ToString()
+        {
+            return Reference.ToString();
+        }
     }
 }
